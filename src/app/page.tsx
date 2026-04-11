@@ -7,7 +7,7 @@ export default function Home() {
   const posts: Posts = getAllPostsMeta();
 
   return (
-    <div className="flex flex-col min-h-screen text-white p-10 md:p-20 items-start md:items-center">
+    <div className="flex flex-col min-h-screen text-white p-5 md:p-20 items-start md:items-center">
       <div className="flex flex-col gap-5 overflow-x-hidden">
 
         {posts.map((post) => (
