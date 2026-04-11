@@ -1,7 +1,13 @@
 
 export default function BlogCard({ postId, postDate, postDesc }: { postId: string, postDate: string, postDesc: string }) {
+  let date;
+  try {
+    date = postDate.slice(0, postDate.indexOf(' '));
+  } catch {
+    console.log("date is empty  ")
+    date = postDate;
+  }
 
-  const date = postDate.slice(0, postDate.indexOf(' '));
   return (
     <div>
       <div className="w-full max-w-2xl bg-gray-700 rounded-2xl border border-gray-500 p-5">
