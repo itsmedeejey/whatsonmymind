@@ -21,7 +21,7 @@ export default async function BlogPost({
     datetime = post.meta.date;
     date = datetime.slice(0, datetime.indexOf(' '));
   } catch {
-    return (<div className="flex text-white items-center text-4xl ">
+    return (<div className="flex text-gruvbox-fg items-center text-4xl ">
 
       <h1 >404 this post is unavailable</h1>
 
@@ -31,8 +31,8 @@ export default async function BlogPost({
   }
   return (
     <article className="prose md:text-[21px] overflow-x-auto max-w-full min-w-0 prose-invert [&_li:has(input[type='checkbox'])]:list-none">
-      <h1 className="">{post.meta.id}</h1>
-      <h2 className="">{date}</h2>
+      <h1 className="text-gruvbox-aqua-dim">{post.meta.id}</h1>
+      <h2 className="text-gruvbox-blue">{date}</h2>
       <div
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />

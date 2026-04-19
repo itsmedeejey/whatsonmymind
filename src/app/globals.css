@@ -1,2 +1,43 @@
 @import "tailwindcss";
 @plugin "@tailwindcss/typography";
+
+@theme {
+  --color-gruvbox-bg: #282828;
+  --color-gruvbox-bg-hard: #1d2021;
+  --color-gruvbox-bg-medium: #32302f;
+  --color-gruvbox-fg: #ebdbb2;
+  --color-gruvbox-red: #cc241d;
+  --color-gruvbox-red-dim: #fb4934;
+  --color-gruvbox-green: #98971a;
+  --color-gruvbox-green-dim: #b8bb26;
+  --color-gruvbox-yellow: #d79921;
+  --color-gruvbox-yellow-dim: #fabd2f;
+  --color-gruvbox-blue: #458588;
+  --color-gruvbox-blue-dim: #83a598;
+  --color-gruvbox-purple: #b16286;
+  --color-gruvbox-purple-dim: #d3869b;
+  --color-gruvbox-aqua: #689d6a;
+  --color-gruvbox-aqua-dim: #8ec07c;
+  --color-gruvbox-gray: #928374;
+  --color-gruvbox-gray-dark: #504945;
+  --color-gruvbox-gray-light: #a89984;
+}
+
+body {
+  background-color: var(--color-gruvbox-bg);
+  color: var(--color-gruvbox-fg);
+}
+
+.prose {
+  --tw-prose-body: var(--color-gruvbox-fg);
+  --tw-prose-headings: var(--color-gruvbox-fg);
+  --tw-prose-links: var(--color-gruvbox-aqua);
+  --tw-prose-bold: var(--color-gruvbox-fg);
+  --tw-prose-code: var(--color-gruvbox-purple);
+  --tw-prose-pre-bg: var(--color-gruvbox-bg-hard);
+  --tw-prose-pre-code: var(--color-gruvbox-fg);
+  --tw-prose-quotes: var(--color-gruvbox-gray-light);
+  --tw-prose-quote-borders: var(--color-gruvbox-aqua);
+  --tw-prose-hr: var(--color-gruvbox-gray-dark);
+  --tw-prose-tags: var(--color-gruvbox-gray);
+}

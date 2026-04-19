@@ -10,16 +10,16 @@ export default function BlogCard({ postId, postDate, postDesc }: { postId: strin
 
   return (
     <div>
-      <div className="w-full max-w-2xl bg-gray-700 rounded-2xl border border-gray-500 p-5">
-        <h1 className="text-2xl font-bold">
+      <div className="w-full max-w-2xl bg-gruvbox-bg-medium rounded-2xl border border-gruvbox-gray-dark p-5">
+        <h1 className="text-2xl font-bold text-shadow-gruvbox-gray-light">
           {postId}
         </h1>
 
-        <p className="font-thin text-sm mb-2">
+        <p className="font-thin text-sm mb-2 text-gruvbox-purple-dim">
           {date}
         </p>
 
-        <p className="font-light text-gray-300 line-clamp-3">
+        <p className="font-light text-gruvbox-gray-light line-clamp-3">
           {postDesc}
         </p>
       </div>
