@@ -32,7 +32,7 @@ export default async function BlogPost({
   return (
     <article className="prose md:text-[21px] overflow-x-auto max-w-full min-w-0 prose-invert [&_li:has(input[type='checkbox'])]:list-none">
       <h1 className="text-gruvbox-aqua-dim">{post.meta.id}</h1>
-      <h2 className="text-gruvbox-blue">{date}</h2>
+      <h2 className="text-gruvbox-blue font-mono">{date}</h2>
       <div
         dangerouslySetInnerHTML={{ __html: post.contentHtml }}
       />

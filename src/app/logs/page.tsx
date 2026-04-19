@@ -25,7 +25,6 @@ export default async function Logs() {
         return (
           <LogsCard
             key={log.meta.id}
-            logId={log.meta.id}
             logDate={log.meta.date}
             content={log.contentHtml} />
         );

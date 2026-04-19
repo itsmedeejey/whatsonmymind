@@ -1,5 +1,5 @@
-export default function LogsCard({ logId, logDate, content }: {
-  logId: string, logDate: string,
+export default function LogsCard({ logDate, content }: {
+  logDate: string,
   content: string
 }) {
   const processContent = content.toString();
@@ -13,12 +13,9 @@ export default function LogsCard({ logId, logDate, content }: {
 
   return (
     <div>
-      <div className="w-full max-w-2xl bg-gruvbox-bg-medium rounded-lg border border-gruvbox-gray-light p-5 ">
-        {/* <h1 className="text-2xl font-bold text-gruvbox-yellow"> */}
-        {/*   {logId} */}
-        {/* </h1> */}
+      <div className="w-sm md:w-3xl  justify-start  bg-gruvbox-bg-medium rounded-lg border-b border-gruvbox-gray-light p-5 mb-3 ">
 
-        <p className="font-bold text-2xl mb-2 text-gruvbox-aqua-dim">
+        <p className="font-mono text-2xl mb-2 text-gruvbox-aqua-dim">
           {date}
         </p>
 
