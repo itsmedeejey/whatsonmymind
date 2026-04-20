@@ -2,10 +2,11 @@ import Link from "next/link"
 export default function NavBar() {
   return (<div className="w-full h-15 flex flex-row  p-5 bg-gruvbox-bg-hard text-gruvbox-fg">
 
-    <div className="flex w-full items-center justify-start">
+    <div className="flex w-full items-center justify-center  md:justify-start">
       <Link href={"/"} >
         <div className="text-md md:text-3xl font-serif font-bold text-gruvbox-yellow">
-          [Whats On My Mind]
+
+          <div>&lt;Whats On My Mind/&gt;</div>
         </div>
       </Link>
     </div>
