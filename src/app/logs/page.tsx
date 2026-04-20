@@ -17,7 +17,7 @@ export default async function Logs() {
   }
 
   return (
-    <div className="flex flex-col items-center  mt-5  md:mt-10 ">
+    <div className="flex flex-col items-center px-5 mt-5  md:mt-10 ">
       <NavCap></NavCap>
 
       {logs.map((log) => {

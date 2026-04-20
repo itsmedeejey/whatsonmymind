@@ -13,8 +13,8 @@ export default function LogsCard({ logDate, content }: {
 
   return (
     <div >
-      <div className="w-sm md:w-3xl  justify-start  bg-gruvbox-bg-medium rounded-lg border-b border-gruvbox-gray-light p-5 mb-3 ">
-        <div className="prose  overflow-x-auto prose-invert [&_li:has(input[type='checkbox'])]:list-none">
+      <div className="w-fit md:w-3xl  justify-start  bg-gruvbox-bg-medium rounded-lg border-b border-gruvbox-gray-light p-5 mb-3 ">
+        <div className="prose  overflow-x-auto prose-invert [&_li:has(input[type='checkbox'])]:list-none ">
 
           <p className="font-mono text-2xl mb-2 text-gruvbox-aqua-dim">
             {date}
